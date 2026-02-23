@@ -76,6 +76,9 @@ python -m src.velktharion.cli --help
 - [Guía de implementación](./docs/IMPLEMENTATION.md)
 - [Arquitectura](./docs/ARCHITECTURE.md)
 - [Runbook](./docs/RUNBOOK.md)
+- [Guía de despliegue](./docs/DEPLOYMENT.md)
+- [Proceso de releases](./docs/RELEASE.md)
+- [Changelog](./CHANGELOG.md)
 - [Contribución](./CONTRIBUTING.md)
 
 ## Contribución
