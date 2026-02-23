@@ -18,7 +18,7 @@
 **Autonomous browser intelligence with persistent strategic memory.**
 
 ## Vision
-Velktharion is a production-oriented skill in the **smouj SuperAgents Universe**. It is designed to solve a concrete operational problem with local-first execution, transparent reasoning traces, and practical safety controls. The architecture prioritizes free/open-source tooling, deterministic behavior, and modular integration with other autonomous skills.
+Velktharion is an autonomous web navigation skill that executes browser tasks reliably, remembers prior execution context, and produces structured outputs for downstream automation. It is built for robust scraping, workflow execution, and repeatable UI operations with safety checks.
 
 ## Core Superpower
 - ⚡ **State-aware autonomous browsing that learns from every run**
