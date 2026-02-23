@@ -1,5 +1,9 @@
 # Velktharion
 
+<p align="center">
+  <img src="./assets/branding/logo.svg" alt="Velktharion logo" width="88" />
+</p>
+
 ![Language](https://img.shields.io/badge/language-Python%203.11%2B-blue)
 ![License](https://img.shields.io/github/license/smouj/Velktharion)
 ![Last Commit](https://img.shields.io/github/last-commit/smouj/Velktharion)
