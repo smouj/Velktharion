@@ -1,70 +1,85 @@
 # Velktharion
 
 ![Language](https://img.shields.io/badge/language-Python%203.11%2B-blue)
-![Stars](https://img.shields.io/github/stars/smouj/Velktharion?style=social)
-![Forks](https://img.shields.io/github/forks/smouj/Velktharion?style=social)
 ![License](https://img.shields.io/github/license/smouj/Velktharion)
 ![Last Commit](https://img.shields.io/github/last-commit/smouj/Velktharion)
+![CI](https://img.shields.io/badge/CI-planned-lightgrey)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/smouj013_dev)
 
-**A mythic browser mind that remembers every strategic click.**
+<p align="center">
+  <a href="./README.md"><img src="https://img.shields.io/badge/README-English-1f6feb?style=for-the-badge" alt="English"></a>
+  <a href="./README.es.md"><img src="https://img.shields.io/badge/README-Español-c92a2a?style=for-the-badge" alt="Español"></a>
+</p>
+
+**Autonomous browser intelligence with persistent strategic memory.**
 
 ## Vision
-Velktharion is designed as a production-minded AI skill for the **smouj SuperAgents Universe**. It solves real operational friction by combining autonomous reasoning, local-first execution, and transparent decision traces. The goal is not just automation, but **reliable autonomy**: repeatable, auditable, and safe by default. It is built to operate standalone or as a module inside larger multi-agent systems.
+Velktharion is a production-oriented skill in the **smouj SuperAgents Universe**. It is designed to solve a concrete operational problem with local-first execution, transparent reasoning traces, and practical safety controls. The architecture prioritizes free/open-source tooling, deterministic behavior, and modular integration with other autonomous skills.
 
 ## Core Superpower
-- ⚡ **Autonomous Web Navigation with Persistent Memory**
+- ⚡ **State-aware autonomous browsing that learns from every run**
 
 ## Current Status (February 2026)
-- 🚧 In ideation and initial scaffolding phase
+- 🚧 Ideation and robust scaffolding phase
 - Next milestones:
-  - [ ] Define domain-driven folder structure
-  - [ ] Ship minimal runnable CLI + config profile
-  - [ ] Integrate Ollama local model gateway
-  - [ ] Add one end-to-end functional example
-  - [ ] Implement test suite (unit + smoke)
-  - [ ] Publish full technical docs and architecture diagram
+  - [ ] Finalize domain contracts and interfaces
+  - [ ] Ship a minimal runnable CLI command
+  - [ ] Add Ollama local model profile and fallback strategy
+  - [ ] Implement one complete end-to-end example
+  - [ ] Add quality gates (lint, typecheck, test)
+  - [ ] Publish architecture and operational runbook
 
-## Planned Architecture (2026 free/open-source stack)
+## Planned Architecture (free/open-source stack)
 - **Primary language:** Python 3.11+
 - **Agent framework:** LangGraph
 - **Local models:** Ollama (Llama 3.1, Qwen2.5, DeepSeek-Coder, Mistral)
-- **Core dependencies:** playwright, chromadb, beautifulsoup4, pydantic, tenacity
-- **Execution model:** local-first, optional self-hosted deployment (n8n / Railway / Fly.io free tier)
+- **Core dependencies:** playwright, chromadb, pydantic, httpx, tenacity
+- **Execution model:** local-first, optional self-hosted deployment
 
-## Project Layout (planned)
+## Capability Blueprint
+- ✅ Navigation planning
+- ✅ Session memory graph
+- ✅ Resilient retries
+- ✅ Structured extraction
+- ✅ Action safety policies
+
+
+## Project Structure
 ```text
 Velktharion/
-├── src/
-│   ├── core/           # domain logic and orchestration
-│   ├── adapters/       # external connectors (API, DB, tools)
-│   ├── memory/         # retrieval/state strategies
-│   └── cli/            # operator commands
-├── tests/
-├── examples/
+├── src/velktharion/
+│   ├── core/           # domain orchestration and policies
+│   ├── adapters/       # external integrations and tool bridges
+│   ├── memory/         # state, retrieval, and context strategies
+│   └── cli.py          # local operator command interface
 ├── docs/
+│   ├── IMPLEMENTATION.md
+│   ├── ARCHITECTURE.md
+│   └── RUNBOOK.md
+├── examples/
+├── tests/
 ├── requirements.txt
 └── README.md
 ```
 
-## Installation (early scaffolding)
+## Quick Start
 ```bash
 git clone https://github.com/smouj/Velktharion.git
 cd Velktharion
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+python -m src.velktharion.cli --help
 ```
 
-## Roadmap Logic
-1. **Foundation:** strict interfaces, typed contracts, config-first behavior
-2. **Reasoning:** deterministic chains + fallback policy for critical actions
-3. **Tooling:** adapter layer for browser, files, APIs, queues, and messaging
-4. **Observability:** structured logs, metrics hooks, and replayable traces
-5. **Safety:** policy gates for destructive or sensitive operations
-6. **Scale-out:** compose with other skills through clean multi-agent boundaries
+## Documentation
+- [Implementation Guide](./docs/IMPLEMENTATION.md)
+- [Architecture](./docs/ARCHITECTURE.md)
+- [Runbook](./docs/RUNBOOK.md)
+- [Contributing](./CONTRIBUTING.md)
 
-## Contribution
+## Contributing
 Contributions are welcome. Please read **CONTRIBUTING.md** before opening issues or PRs.
 
 ## License
 MIT © 2026 smouj
-
-Part of the **smouj SuperAgents Universe** → https://github.com/smouj/smouj
