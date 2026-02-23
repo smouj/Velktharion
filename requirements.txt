@@ -1,0 +1,8 @@
+langchain
+langgraph
+llama-index
+pydantic
+python-dotenv
+pytest
+ruff
+mypy
