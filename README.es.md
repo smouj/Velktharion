@@ -90,3 +90,10 @@ Las contribuciones son bienvenidas. Lee **CONTRIBUTING.md** antes de abrir issue
 
 ## Licencia
 MIT © 2026 smouj
+
+---
+
+### Otras skills
+Explora el ecosistema completo aquí: **[smouj/smouj](https://github.com/smouj/smouj)**
+
+**Firma:** [@Smouj013](https://x.com/smouj013)
