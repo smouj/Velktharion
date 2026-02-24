@@ -7,7 +7,7 @@
 ![Language](https://img.shields.io/badge/language-Python%203.11%2B-blue)
 ![License](https://img.shields.io/github/license/smouj/Velktharion)
 ![Last Commit](https://img.shields.io/github/last-commit/smouj/Velktharion)
-![CI](https://img.shields.io/badge/CI-planned-lightgrey)
+![CI](https://img.shields.io/github/actions/workflow/status/smouj/Velktharion/ci.yml?branch=main)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/smouj013_dev)
 
 <p align="center">
@@ -15,63 +15,44 @@
   <a href="./README.es.md"><img src="https://img.shields.io/badge/README-Español-c92a2a?style=for-the-badge" alt="Español"></a>
 </p>
 
-**Autonomous browser intelligence with persistent strategic memory.**
+**Autonomous browser intelligence for resilient web execution.**
 
 ## Vision
-Velktharion is an autonomous web navigation skill that executes browser tasks reliably, remembers prior execution context, and produces structured outputs for downstream automation. It is built for robust scraping, workflow execution, and repeatable UI operations with safety checks.
+Executes intent-driven browser tasks with resilient navigation, extraction, and snapshots.
 
-## Core Superpower
-- ⚡ **State-aware autonomous browsing that learns from every run**
+## What problem it solves
+Web automation breaks when pages change and selectors become unstable.
 
-## Current Status (February 2026)
-- 🚧 Ideation and robust scaffolding phase
-- Next milestones:
-  - [ ] Finalize domain contracts and interfaces
-  - [ ] Ship a minimal runnable CLI command
-  - [ ] Add Ollama local model profile and fallback strategy
-  - [ ] Implement one complete end-to-end example
-  - [ ] Add quality gates (lint, typecheck, test)
-  - [ ] Publish architecture and operational runbook
+## Core superpower
+- ⚡ **Self-healing browser workflows with persistent execution memory**
 
-## Planned Architecture (free/open-source stack)
-- **Primary language:** Python 3.11+
-- **Agent framework:** LangGraph
-- **Local models:** Ollama (Llama 3.1, Qwen2.5, DeepSeek-Coder, Mistral)
-- **Core dependencies:** playwright, chromadb, pydantic, httpx, tenacity
-- **Execution model:** local-first, optional self-hosted deployment
-
-## Capability Blueprint
-- ✅ Navigation planning
-- ✅ Session memory graph
-- ✅ Resilient retries
-- ✅ Structured extraction
-- ✅ Action safety policies
+## Key use cases
+- ✅ Automated data collection
+- ✅ Form workflows
+- ✅ Visual page capture
+- ✅ Repeatable UI operations
 
 
-## Project Structure
-```text
-Velktharion/
-├── src/velktharion/
-│   ├── core/           # domain orchestration and policies
-│   ├── adapters/       # external integrations and tool bridges
-│   ├── memory/         # state, retrieval, and context strategies
-│   └── cli.py          # local operator command interface
-├── docs/
-│   ├── IMPLEMENTATION.md
-│   ├── ARCHITECTURE.md
-│   └── RUNBOOK.md
-├── examples/
-├── tests/
-├── requirements.txt
-└── README.md
-```
+## API surface
+`POST /navigate`, `POST /extract`, `POST /snapshot`, `GET /health`
 
-## Quick Start
+## Technical stack
+- **Core stack:** FastAPI + Playwright + local persistence
+- **Runtime:** local-first, self-hosted friendly
+- **Infra:** Docker Compose + Caddy + Redis/Chroma/Ollama compatibility
+
+## Current status (Feb 2026)
+- ✅ Public scaffold available
+- ✅ Bilingual README (EN default + ES)
+- ✅ CI + release baseline configured
+- 🚧 Feature hardening in progress
+
+## Quick start
 ```bash
 git clone https://github.com/smouj/Velktharion.git
 cd Velktharion
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
 python -m src.velktharion.cli --help
 ```
@@ -83,10 +64,9 @@ python -m src.velktharion.cli --help
 - [Deployment Guide](./docs/DEPLOYMENT.md)
 - [Release Process](./docs/RELEASE.md)
 - [Changelog](./CHANGELOG.md)
-- [Contributing](./CONTRIBUTING.md)
 
 ## Contributing
-Contributions are welcome. Please read **CONTRIBUTING.md** before opening issues or PRs.
+Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 MIT © 2026 smouj
